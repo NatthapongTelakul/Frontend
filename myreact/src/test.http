@@ -1,0 +1,20 @@
+#GET http://localhost:8080/users HTTP/1.1
+
+# POST http://localhost:8080/add_user HTTP/1.1
+# content-type: application/json
+
+# {
+#     "user_name": "mimi",
+#     "user_pwd": "1111",
+#     "first_name": "Milan",
+#     "last_name": "Millor",
+#     "email": "mimi@gmail.com"
+# }
+
+POST http://localhost:3000/login HTTP/1.1
+Content-Type: application/json
+
+{
+    "username": "peter",
+    "password": "2222"
+}

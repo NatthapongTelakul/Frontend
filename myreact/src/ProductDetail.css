@@ -1,0 +1,26 @@
+.PD-addtext {
+    position: absolute;
+    top: -60px;
+    height: 80px;
+    width: 350px;
+    background: black;
+    color: white;
+    font-size: 26px;
+    align-items: center;
+    border-radius: 10px;
+    font-weight: 700;
+    padding: 20px;
+    text-align: center;
+    left: 330px;
+}
+
+.PD-container{
+    position: absolute;
+    width: 1000px;
+    background: rgb(246, 246, 246);
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgb(0,0,0,0.5);
+    padding: 40px;
+    top: 180px;
+    left: 350px;
+}

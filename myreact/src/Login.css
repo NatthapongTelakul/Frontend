@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+}
+
+body {
+    width: 100%;
+    height: 100%;
+    background-image: url('./images/gym.jpg');
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card {
+    position: absolute;
+    height: 400px;
+    width: 600px;
+    background-image: linear-gradient(90deg,rgb(159, 159, 159),rgb(187, 187, 187));
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgb(0,0,0,0.5);
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    top: 180px;
+}
+
+.sign-in {
+    position: absolute;
+    top: -40px;
+    height: 80px;
+    width: 250px;
+    background: black;
+    color: white;
+    font-size: 2rem;
+    text-transform: uppercase;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+}
+
+.login-form {
+    position: relative;
+    height: 50px;
+    width: 500px;
+    background: white;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.login-label {
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    padding: 10px;
+    position: relative;
+    bottom: -5px;
+    height: 80px;
+    width: 250px;
+    font-size: 1rem;
+    text-transform: uppercase;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.login-invalid {
+    padding: 10px;
+    position: relative;
+    height: 80px;
+    width: 250px;
+    font-size: 1rem;
+    justify-content: center;
+    align-items: center; 
+}
+
+.input {
+    height: 35px;
+    width: 100%;
+    border: none;
+    font-size: 1.2rem;
+    outline: none;
+    background: transparent;
+}
+
+.login-btn {
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    margin: 20px 0;
+    padding: 15px 0;
+    width: 500px;
+    left: 50px;
+    border: none;
+    border-radius: 10px;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

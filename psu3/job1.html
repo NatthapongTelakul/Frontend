@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="job1.css">
+    
+    <script>
+        function light(l1,l2,l3,txt,col){
+            const greenlight = document.getElementById("g");
+            greenlight.style.backgroundColor = l1;
+
+            const yellowlight = document.getElementById("y");
+            yellowlight.style.backgroundColor = l2;
+
+            const redlight = document.getElementById("r");
+            redlight.style.backgroundColor = l3;
+
+            const text = document.getElementById("third");
+            text.innerText = txt; 
+            text.style.color = col;
+
+            let tools = 20;
+            console.log(tools);
+            console.log(greenlight);
+            console.log(tool);
+        }
+
+        // function green(){
+        //     //alert("Hello java");
+        //     const greenlight = document.getElementById("g");
+        //     greenlight.style.backgroundColor = "green";
+
+        //     const yellowlight = document.getElementById("y");
+        //     yellowlight.style.backgroundColor = "black";
+
+        //     const redlight = document.getElementById("r");
+        //     redlight.style.backgroundColor = "black";
+
+        //     const text = document.getElementById("third");
+        //     text.innerText = "ไฟเขียว"; 
+        //     text.style.color = "green";
+        // }
+
+        // function yellow(){
+        //     const greenlight = document.getElementById("g");
+        //     greenlight.style.backgroundColor = "black";
+
+        //     const yellowlight = document.getElementById("y");
+        //     yellowlight.style.backgroundColor = "yellow";
+
+        //     const redlight = document.getElementById("r");
+        //     redlight.style.backgroundColor = "black";
+
+        //     const text = document.getElementById("third");
+        //     text.innerText = "ไฟเหลือง"; 
+        //     text.style.color = "yellow";
+        // }
+
+        // function red(){
+        //     const greenlight = document.getElementById("g");
+        //     greenlight.style.backgroundColor = "black";
+
+        //     const yellowlight = document.getElementById("y");
+        //     yellowlight.style.backgroundColor = "black";
+
+        //     const redlight = document.getElementById("r");
+        //     redlight.style.backgroundColor = "red";
+
+        //     const text = document.getElementById("third");
+        //     text.innerText = "ไฟแดง"; 
+        //     text.style.color = "red";
+        // }
+    </script>
+
+</head>
+<body>
+    <button onclick="light('green','black','black','ไฟเขียว','green')"> ไฟเขียว </button>
+    <button onclick="light('black','yellow','black','ไฟเหลือง','yellow')"> ไฟเหลือง </button>
+    <button onclick="light('black','black','red','ไฟแดง','red')"> ไฟแดง </button>   
+
+    <!-- <button onclick="green()"> ไฟเขียว </button>
+    <button onclick="yellow()"> ไฟเหลือง </button>
+    <button onclick="red()"> ไฟแดง </button>    -->
+
+    <div id="first" class="c1">
+        สี่แยกโรงพยาบาล ม.อ.
+    </div>
+
+    <div id="second" class="container">
+        <div id="g" class="circle"></div>
+        <div id="y" class="circle"></div>
+        <div id="r" class="circle"></div>
+    </div>
+
+    <div id="third" class="c1">
+        ไฟ
+    </div>
+    
+</body>
+</html>

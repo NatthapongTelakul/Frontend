@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="student.js"></script>
+</head>
+<body>
+    <form>
+        <div>
+            <label>ขื่อ-นามสกุล</label>
+        </div>
+        <input type="text" id="std">
+
+        <div>
+            <label>เพศ</label>
+        </div>
+        <input type="radio" id="genderid1" name="gendername" value="ชาย"> ชาย
+        <input type="radio" id="genderid2" name="gendername" value="หญิง"> หญิง
+
+        <div>
+            <label>ทุนการศึกษา</label>
+        </div>
+        <input type="checkbox" id="fundid" value="TA"> ทุนผู้ช่วยสอน
+
+        <div>
+            <label>คณะ</label>
+        </div>
+        <select id="faculty">
+            <option value="วิทยาศาสตร์"> Science </option>
+            <option value="พยาบาล"> พยาบาล </option>
+            <option value="วิศวกรรมศาตร์"> วิศวกรรมศาตร์ </option>
+        </select>
+
+        <div>
+            <input type="button" id="btncalculate" value="คำนวณ" onclick="showdata()">
+        </div>
+        <div>
+            <input type="text" id="result" style="width: 800px">
+        </div>
+    </form>
+    <img src="6510210155.jpg">
+</body>
+</html>

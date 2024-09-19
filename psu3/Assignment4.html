@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment4</title>
+    <link rel="stylesheet" href="style_game.css">
+    <script>
+        function one(id){
+            const x = document.getElementById(id);
+            x.style.visibility = "hidden";
+        }
+
+        function show_answer(){
+            const text = document.getElementById("third");
+            text.innerText = "Ford mustang 1969";
+
+            for (let i = 1; i <= 16 ; i++) {
+                one(i);
+            }
+        }
+    </script>
+</head>
+<body>
+    <div id="first" class="sec1">
+        เกมทายภาพปริศนา
+    </div>
+
+    <div class="grid">
+        <img src="1969-ford-mustang1.jpg" alt="">
+            <div id="1" class="box pink" onclick="one(id)">1</div>
+            <div id="2" class="box blue" onclick="one(id)">2</div>
+            <div id="3" class="box pink" onclick="one(id)">3</div>
+            <div id="4" class="box blue" onclick="one(id)">4</div>
+
+            <div id="5" class="box blue" onclick="one(id)">5</div>
+            <div id="6" class="box pink" onclick="one(id)">6</div>
+            <div id="7" class="box blue" onclick="one(id)">7</div>
+            <div id="8" class="box pink" onclick="one(id)">8</div>
+
+            <div id="9" class="box pink" onclick="one(id)">9</div>
+            <div id="10" class="box blue" onclick="one(id)">10</div>
+            <div id="11" class="box pink" onclick="one(id)">11</div>
+            <div id="12" class="box blue" onclick="one(id)">12</div>
+
+            <div id="13" class="box blue" onclick="one(id)">13</div>
+            <div id="14" class="box pink" onclick="one(id)">14</div>
+            <div id="15" class="box blue" onclick="one(id)">15</div>
+            <div id="16" class="box pink" onclick="one(id)">16</div>
+        </div>
+    </div>
+    <div class="center">
+        <button onclick="show_answer()" class="btn"> เฉลย </button>
+    </div>
+
+    <div id="third" class="sec1">
+        
+    </div>
+    
+</body>
+</html>

@@ -1,0 +1,22 @@
+.c1 {
+    background-color: grey;
+    text-align: center;
+    font-size: 26px;
+    padding: 20px;
+    color: #fff;
+}
+
+.container {
+    background-color: lightgray;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.circle {
+    width: 100px;
+    height: 100px;
+    background-color: black;
+    margin: 10px;
+    border-radius: 50%;
+}
