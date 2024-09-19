@@ -100,6 +100,14 @@ app.post("/login", (req, res) => {
     });
 });
 
+app.get('/products',(req, res) => {
+    pool.query("SELECT * FROM products", function(error, results, fields){
+        if (error) throw error;
+
+        res.json(results);
+    });
+});
+
 app.post("/api/authen_request",(req, res) => {
     const sql = "SELECT * FROM users WHERE MD5(user_name) = ?";
     pool.query(sql, [req.body.username], (error, results) => {
